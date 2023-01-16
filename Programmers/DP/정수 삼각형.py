@@ -1,7 +1,6 @@
 # 풀이 시간 - 10분
 # 정답
 
-```python
 def solution(triangle):
     while True:
         if len(triangle) == 1:
@@ -14,4 +13,3 @@ def solution(triangle):
 
 
     return triangle[0][0]
-```
