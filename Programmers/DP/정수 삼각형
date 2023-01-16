@@ -1,3 +1,6 @@
+# 풀이 시간 - 10분
+# 정답
+
 def solution(triangle):
     while True:
         if len(triangle) == 1:
