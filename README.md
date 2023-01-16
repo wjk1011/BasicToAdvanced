@@ -1,5 +1,5 @@
 # We are Team BTA (BasicToAdvanced)
-**Anyone who is basic, intermediate or advanced will start with basic and end with advanced.**
+**Anyone who is basic, intermediate or advanced will start again with basic and finally end with advanced.**
 
 BTA brings me here !
 #### Rule
