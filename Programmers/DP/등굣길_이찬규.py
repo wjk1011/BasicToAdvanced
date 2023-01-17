@@ -1,3 +1,7 @@
+# 풀이 시간 : 40분
+# 정답 
+# 마지막에 1000000007으로 나눴을 때의 나머지를 안구해놓고 왜 답이 틀리지 끙끙 앓음
+
 def solution(m, n, puddles):
     class Node:
         def __init__(self, id, loc, dist):
