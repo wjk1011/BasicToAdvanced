@@ -1,3 +1,6 @@
+# 풀이시간 : 15분
+# 정답
+
 N = int(input())
 fear = sorted(list(map(int, input().split())))
 cnt = 0
