@@ -10,12 +10,11 @@ def solution(A,B):
     return answer
   
 # 2번 정답
-  
-  def solution(priorities, location):
+def solution(priorities, location):
     priorities = list(map(lambda x: [priorities[x], x], range(len(priorities))))
     cnt = 1
     while True:
-        
+
         pri = list(map(lambda x: x[0], priorities))
         idx = list(map(lambda x: x[1], priorities))
         if pri[0] == max(pri):
