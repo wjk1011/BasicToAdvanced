@@ -61,7 +61,8 @@ def solution(enroll, referral, seller, amount):
     for i, e in enumerate(enroll):
         if referral[i] != '-':
             dict_seller[e][0] = referral[i]
-            
+        
+        
     def recursive(s, dict_seller, money):
         if money >= 10:
             if dict_seller[s][0] is None:
@@ -75,6 +76,8 @@ def solution(enroll, referral, seller, amount):
         else:
             dict_seller[s][2] += money
             return dict_seller
+    
+    
     for i, s in enumerate(seller):
         money = amount[i] * 100
         recursive(s, dict_seller, money)
