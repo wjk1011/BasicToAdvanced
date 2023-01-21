@@ -52,3 +52,31 @@ def solution(enroll, referral, seller, amount):
     for i in enroll:
         answer.append(dict_seller[i][3])
     return answer
+
+# 해결
+# 한 사람이 칫솔 2개, 2개 팔았을 때랑 4개 팔았을 때 결과가 다르다는 것을 간과함
+import math
+def solution(enroll, referral, seller, amount):
+    dict_seller = {i:[None,  0, 0] for i in enroll} #부모, 판매량, 이익
+    for i, e in enumerate(enroll):
+        if referral[i] != '-':
+            dict_seller[e][0] = referral[i]
+            
+    def recursive(s, dict_seller, money):
+        if money >= 10:
+            if dict_seller[s][0] is None:
+                dict_seller[s][2] += money - math.floor(money * 0.1)
+                return dict_seller
+            else:
+                dict_seller[s][2] += money - math.floor(money * 0.1)
+                s = dict_seller[s][0]
+                money = math.floor(money * 0.1)
+                recursive(s, dict_seller, money)
+        else:
+            dict_seller[s][2] += money
+            return dict_seller
+    for i, s in enumerate(seller):
+        money = amount[i] * 100
+        recursive(s, dict_seller, money)
+    answer = [dict_seller[i][2] for i in enroll]
+    return answer
