@@ -20,7 +20,7 @@ def solution(genres, plays):
 
 
 # 2 실패
-# 다단계 판매수익 문제
+# [다단계 칫솔 판매] 문제
 # 테스트 케이스는 다 맞았는데 제출하니까 다 틀림 왜 틀렸는지 모르겠음
 def solution(enroll, referral, seller, amount):
     dict_seller = {i:[None, [], 0, 0] for i in enroll} #부모, 자녀, 판매량, 이익
