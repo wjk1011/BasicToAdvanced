@@ -3,7 +3,7 @@
 
 # 2
 # 억억단 
-#시간초과 해결 못함
+# 시간초과 해결 못함
 
 def solution(e, starts):
     answer = []
