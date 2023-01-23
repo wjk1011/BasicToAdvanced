@@ -14,6 +14,9 @@ def solution(e, starts):
             if n * m > e:
                 n += 1
                 m = n+1
+                
+            elif s > n * m:
+                m += 1
 
             else:
                 if n*m in dict_num:
@@ -26,6 +29,4 @@ def solution(e, starts):
                         answer.append(i)
                         break
                 break
-                
-            
     return answer
