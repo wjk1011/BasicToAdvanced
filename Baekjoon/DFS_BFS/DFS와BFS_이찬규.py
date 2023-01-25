@@ -1,3 +1,5 @@
+# 풀이 시간 기록을 못했음 꽤 걸린거같음
+# 정답
 
 n, m, v = map(int, input().split(' '))
 arr = [list(map(int, input().split(' '))) for _ in range(m)]
