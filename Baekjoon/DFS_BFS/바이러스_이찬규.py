@@ -1,3 +1,6 @@
+# 풀이 시간 : 8분
+# 정답
+
 n, m = int(input()), int(input())
 arr = [list(map(int, input().split(' '))) for i in range(m)]
 d = {i+1:[] for i in range(n)}
