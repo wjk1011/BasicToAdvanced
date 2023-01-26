@@ -1,3 +1,6 @@
+# 풀이시간 : 1시간 30분
+# 정답
+
 import copy
 from collections import Counter
 n = int(input())
