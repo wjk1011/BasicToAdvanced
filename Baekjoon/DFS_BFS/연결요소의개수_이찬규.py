@@ -1,4 +1,5 @@
 # 시간 초과 실패
+# PyPy3로 정답처리 되기는 함
 
 N, M = list(map(int, input().split(' ')))
 arr = [list(map(int, input().split(' '))) for i in range(M)]
